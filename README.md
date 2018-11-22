@@ -3,7 +3,7 @@ Algorithm practice
 
 This is a personal repository that records algorithm-practices from LeetCode, Codevs, Luogu
 
-All the code are originally written by Mingxuan Fan. Copyright © 2018 Mingxuan Fan:https://github.com/PTRFmX.
+All the code are originally written by Mingxuan Fan. Copyright © 2018 <a href="https://github.com/PTRFmX">Mingxuan Fan</a>.
 ## Getting Started
 
 N/A
