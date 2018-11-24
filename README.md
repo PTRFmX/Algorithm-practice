@@ -3,6 +3,7 @@ Algorithm practice
 
 This is a personal repository that records algorithm-practices from LeetCode, Codevs, Luogu
 
+All the files are originally written by Mingxuan Fan. Copyright © 2018 <a href="https://github.com/PTRFmX">Mingxuan Fan</a>.
 ## Getting Started
 
 N/A
@@ -44,7 +45,7 @@ See also the list of [contributors](https://github.com/PTRFmX/Algorithm-practice
 
 ## License
 
-This project is licensed under the ... Sorry this project has not license.
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
