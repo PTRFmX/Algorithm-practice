@@ -1,41 +1,11 @@
 # Algorithm-practice
 Algorithm practice
 
-This is a personal repository that records algorithm-practices from LeetCode, Codevs, Luogu
-
-All the files are originally written by Mingxuan Fan. Copyright © 2018 <a href="https://github.com/PTRFmX">Mingxuan Fan</a>.
-## Getting Started
-
-N/A
-
-### Prerequisites
-
-C++ running envirnment.
-
-### Installing
-
-N/A
-
+This is a personal repository that records algorithm-practices from LeetCode, Codevs, Luogu. Copyright © 2018 <a href="https://github.com/PTRFmX">Mingxuan Fan</a>.
 
 ## Running the files
 
 Most of the files are written in C++. If you want to test the code, please first configure your local environment of C++.
-
-### Coding style tests
-
-N/A
-
-## Deployment
-
-N/A
-
-## Built With
-
-N/A
-
-## Contributing
-
-Mingxuan Fan
 
 ## Authors
 
@@ -46,8 +16,3 @@ See also the list of [contributors](https://github.com/PTRFmX/Algorithm-practice
 ## License
 
 This project is licensed under the MIT License
-
-## Acknowledgments
-
-* None
-* ...
