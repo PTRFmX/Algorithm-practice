@@ -87,6 +87,28 @@ void printBinaryTree(TreeNode* root) {
     cout << "[" + result.substr(0, result.size() - 1) + "]" << endl;
 }
 
+void printAryTree(Node* root) {
+    if (root == nullptr) {
+        cout << "" << endl;
+    }
+    queue<Node*> q;
+    string result = "";
+    q.push(root);
+    while (!q.empty()) {
+        Node* node = q.front();
+        if (node == nullptr) {
+            result = result + "null,";
+        } else {
+            result = result + string(to_string(node->val)) + ",";
+            for(int i = 0; i < node->children.size(); i++) {
+                q.push((node->children)[i]);
+            }        
+        }
+        q.pop();
+    }
+    cout << "[" + result.substr(0, result.size() - 1) + "]" << endl;
+}
+
 int readNumber() {
     int result;
     cin >> result;
@@ -174,6 +196,38 @@ TreeNode* readBinaryTree() {
             }
         }
         q.pop();
+    }
+    return root;
+}
+
+Node* readAryTree(int k_ary) {
+    string line = "";
+    cin >> line;
+    line = line.substr(1, line.size() - 2);
+    if (line == "") {
+        return nullptr;
+    }
+    queue<Node*> q;
+    vector<string> values = split(line, ",");
+    Node* root = new Node(stoi(values[0]), {});
+    q.push(root);
+    for (int i = 1; i < values.size(); i++) {
+        Node* parent = q.front();
+        for (int j = 0; j < k_ary; j++) {
+            if (values[i + j] == "") {
+                q.push((parent->children)[j]);
+                return root;
+            }
+            if (values[i + j] != "null" && parent != nullptr) {
+                parent->children.push_back(new Node(stoi(values[i + j]), {}));               
+            }
+            q.push((parent->children)[j]);
+            if (j == k_ary - 1) {
+                i = i + j;
+                break;
+            }   
+        }
+        q.pop();      
     }
     return root;
 }
