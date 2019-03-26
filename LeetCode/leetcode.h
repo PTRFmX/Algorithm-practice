@@ -131,6 +131,16 @@ vector<int> readVector(int size) {
     return result;
 }
 
+vector<char> readCharVector(int size) {
+    vector<char> result;
+    for (int i = 1; i <= size; ++i) {
+        char temp;
+        cin >> temp;
+        result.push_back(temp);
+    }
+    return result;
+}
+
 vector<string> readStringVector(int size) {
     vector<string> result;
     for (int i = 1; i <= size; ++i) {
@@ -145,6 +155,14 @@ vector<vector<int> > readGrid(int m, int n) {
     vector<vector<int> > result;
     for (int i = 1; i <= m; ++i) {
         result.push_back(readVector(n));
+    }
+    return result;
+}
+
+vector<vector<char> > readCharGrid(int m, int n) {
+    vector<vector<char> > result;
+    for (int i = 1; i <= m; ++i) {
+        result.push_back(readCharVector(n));
     }
     return result;
 }
