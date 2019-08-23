@@ -118,7 +118,13 @@ int readNumber() {
 string readString() {
     string str;
     cin >> str;
-    return str;
+    return str; 
+}
+
+char readChar() {
+    char c;
+    cin >> c;
+    return c;
 }
 
 vector<int> readVector(int size) {
@@ -144,9 +150,8 @@ vector<char> readCharVector(int size) {
 vector<string> readStringVector(int size) {
     vector<string> result;
     for (int i = 1; i <= size; ++i) {
-        string temps;
-        cin >> temps;
-        result.push_back(temps);
+        string temp = readString();
+        result.push_back(temp);
     }
     return result;
 }
