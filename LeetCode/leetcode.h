@@ -121,6 +121,15 @@ string readString() {
     return str; 
 }
 
+/**
+ * Add cin.ignore() if there is cin >> YOUR_VAR before readStringLine()
+*/
+string readStringLine() {
+    string str;
+    getline(cin, str);
+    return str;
+}
+
 char readChar() {
     char c;
     cin >> c;
